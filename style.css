@@ -1,0 +1,311 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #f5f5f5 0%, #e0e0e0 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+}
+
+.card {
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    border: 1px solid #eaeaea;
+}
+
+/* Header Styles */
+.card-header {
+    text-align: center;
+    padding: 30px 30px 20px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.icon-header {
+    margin-bottom: 15px;
+}
+
+.icon-header i {
+    font-size: 48px;
+    color: #333;
+}
+
+.card-header h1 {
+    color: #000;
+    font-size: 28px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.subtitle {
+    color: #666;
+    font-size: 14px;
+}
+
+/* Card Body */
+.card-body {
+    padding: 30px;
+}
+
+/* Input Group */
+.input-group {
+    margin-bottom: 25px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.input-group label i {
+    margin-right: 8px;
+    color: #666;
+}
+
+.password-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.password-wrapper input {
+    width: 100%;
+    padding: 15px 90px 15px 15px;
+    border: 2px solid #e0e0e0;
+    border-radius: 12px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    background: white;
+    color: #333;
+}
+
+.password-wrapper input:focus {
+    outline: none;
+    border-color: #000;
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.1);
+}
+
+.password-wrapper input::placeholder {
+    color: #aaa;
+}
+
+.icon-btn {
+    position: absolute;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #666;
+    font-size: 18px;
+    padding: 10px;
+    transition: color 0.3s ease;
+}
+
+.icon-btn:hover {
+    color: #000;
+}
+
+.toggle-btn {
+    right: 40px;
+}
+
+.copy-btn {
+    right: 5px;
+}
+
+/* Strength Meter */
+.strength-meter {
+    background: #f8f8f8;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    border: 1px solid #eaeaea;
+}
+
+.strength-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.strength-label {
+    color: #333;
+    font-weight: 500;
+}
+
+.strength-label i {
+    margin-right: 8px;
+    color: #666;
+}
+
+.strength-value {
+    font-weight: 600;
+    padding: 4px 12px;
+    border-radius: 20px;
+    background: white;
+    color: #333;
+    border: 1px solid #eaeaea;
+}
+
+.strength-bar-container {
+    height: 8px;
+    background: #e0e0e0;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.strength-bar {
+    height: 100%;
+    width: 0%;
+    transition: all 0.3s ease;
+    border-radius: 4px;
+}
+
+/* Strength Bar Colors */
+.strength-bar.weak {
+    background: #dc3545;
+    width: 20%;
+}
+
+.strength-bar.medium {
+    background: #ffc107;
+    width: 50%;
+}
+
+.strength-bar.strong {
+    background: #28a745;
+    width: 100%;
+}
+
+.score-details {
+    text-align: right;
+    color: #666;
+    font-size: 14px;
+}
+
+/* Requirements Checklist */
+.requirements {
+    background: #f8f8f8;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #eaeaea;
+}
+
+.requirements h3 {
+    color: #333;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.requirements h3 i {
+    margin-right: 8px;
+    color: #666;
+}
+
+.checklist {
+    list-style: none;
+}
+
+.requirement-item {
+    display: flex;
+    align-items: center;
+    padding: 8px 0;
+    color: #666;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.requirement-item i {
+    width: 20px;
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+.requirement-item.met {
+    color: #28a745;
+}
+
+.requirement-item.met i {
+    color: #28a745;
+}
+
+/* Tips Section */
+.tips-section {
+    background: #f8f8f8;
+    padding: 20px;
+    border-radius: 12px;
+    margin-top: 20px;
+    border: 1px solid #eaeaea;
+}
+
+.tips-section h4 {
+    color: #333;
+    margin-bottom: 12px;
+    font-size: 15px;
+}
+
+.tips-section h4 i {
+    margin-right: 8px;
+    color: #f39c12;
+}
+
+.tips-list {
+    list-style: none;
+}
+
+.tips-list li {
+    padding: 6px 0;
+    color: #666;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+}
+
+.tips-list li i {
+    margin-right: 8px;
+    font-size: 12px;
+    color: #666;
+}
+
+/* Footer */
+.card-footer {
+    padding: 20px 30px;
+    text-align: center;
+    border-top: 1px solid #f0f0f0;
+    color: #888;
+    font-size: 13px;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .card-body {
+        padding: 20px;
+    }
+    
+    .card-header h1 {
+        font-size: 24px;
+    }
+    
+    .password-wrapper input {
+        padding: 12px 80px 12px 12px;
+        font-size: 14px;
+    }
+}
